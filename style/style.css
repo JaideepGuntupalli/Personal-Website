@@ -234,6 +234,7 @@ header::after {
     padding: 0;
   }
 }
+/* IPAD ends */
 
 /* Mobile screen */
 @media screen and (max-width: 650px) {
@@ -259,3 +260,4 @@ header::after {
     width: 300px;
   }
 }
+/* Mobile Screen Ends */
