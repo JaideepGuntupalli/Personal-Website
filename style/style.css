@@ -234,3 +234,28 @@ header::after {
     padding: 0;
   }
 }
+
+/* Mobile screen */
+@media screen and (max-width: 650px) {
+  .main {
+    max-width: 600px;
+    margin: 1.5em 2em;
+    align-items: center;
+  }
+
+  .main__greet {
+    font-size: 1.5em;
+  }
+
+  .main__intro {
+    font-size: 1.5em;
+  }
+
+  .main__desc {
+    font-size: 0.875em;
+  }
+
+  .main__illustration {
+    width: 300px;
+  }
+}
