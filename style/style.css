@@ -137,3 +137,100 @@ header::after {
 }
 
 /* Main End */
+
+/* IPAD */
+@media screen and (max-width: 1200px) {
+  header {
+    position: relative;
+  }
+
+  .logo {
+    width: 75px;
+    margin: 0;
+  }
+
+  /* Hamburger Menu */
+
+  .nav {
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+  }
+
+  .nav__toggle-label {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__toggle-label span,
+  .nav__toggle-label span::before,
+  .nav__toggle-label span::after {
+    background: var(--clr-primary);
+    height: 4px;
+    width: 2.125rem;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .nav__toggle-label span::before,
+  .nav__toggle-label span::after {
+    content: "";
+    position: absolute;
+  }
+
+  .nav__toggle-label span::before {
+    bottom: 10px;
+    width: 50%;
+  }
+
+  .nav__toggle-label span::after {
+    top: 10px;
+    width: 75%;
+  }
+
+  .nav__list {
+    position: absolute;
+    justify-content: space-around;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--clr-light);
+    z-index: 990;
+  }
+
+  .nav__link {
+    font-size: 30px;
+    color: var(--clr-primary);
+  }
+
+  .nav__toggle:checked ~ nav {
+    opacity: 1;
+    transition: opacity 150ms ease-in;
+  }
+
+  .main {
+    max-width: 612px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .main-title {
+    font-size: 2.5em;
+    padding: 0.25em 0em;
+  }
+
+  .main__illustration {
+    width: 374px;
+    padding: 0;
+  }
+}
