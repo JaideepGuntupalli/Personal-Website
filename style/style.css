@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  --clr-dark: #02032c;
+  --clr-darkmode: #121212;
+  --clr-primary: #ff3826;
+  --clr-link: #ff6262;
+  --clr-light: #edf0f1;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+body {
+  background-color: var(--clr-light);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  color: var(--clr-dark);
+  line-height: 1.6;
+}
