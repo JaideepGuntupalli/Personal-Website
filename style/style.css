@@ -25,3 +25,68 @@ body {
   color: var(--clr-dark);
   line-height: 1.6;
 }
+
+/* Nav Container */
+.nav__container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background-color: var(--clr-light);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Line at bottom of header */
+header::after {
+  content: "";
+  position: absolute;
+  background: var(--clr-dark);
+  opacity: 0.3;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  width: 65px;
+  margin: 0;
+  margin-right: 18rem;
+}
+
+/* Nav bar */
+.nav__list {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-light);
+  color: var(--clr-primary);
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+  margin: 1.5rem;
+}
+
+/* To Hide Check box */
+.nav__toggle {
+  display: none;
+}
